@@ -98,7 +98,7 @@ function App() {
               <motion.button
                 onClick={() => {
                   // Open GitHub repository
-                  window.open('https://github.com/the-sukhsing/scrollbar', '_blank');
+                  window.open('https://github.com/the-sukhsingh/scrollbar', '_blank');
                 }}
                 className="p-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full border border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl cursor-pointer"
                 whileHover={{ scale: 1.05 }}
