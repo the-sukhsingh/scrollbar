@@ -142,8 +142,8 @@ export const Styles: React.FC<StylesProps> = ({
         <div className="flex gap-2">
           <motion.button
             onClick={() => {
-              // Apply custom CSS logic here
-              ('Applying custom CSS:', customCSS);
+              onConfigChange({ customCSS });
+              setCustomCSS('');
             }}
             className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all"
             whileHover={{ scale: 1.05 }}

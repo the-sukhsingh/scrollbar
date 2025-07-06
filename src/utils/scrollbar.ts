@@ -44,6 +44,8 @@ export const applyScrollbarStyles = (config: ScrollbarConfig) => {
       background: ${config.hoverColor} !important;
     }
     
+    /* Custom CSS */
+    ${config.customCSS || ''}
   `;
   
   style.textContent = css;
@@ -95,7 +97,10 @@ export const generateScrollbarCSS = (config: ScrollbarConfig): string => {
 /* For Internet Explorer */
 body {
   -ms-overflow-style: ${config.visibility === 'hidden' ? 'none' : 'scrollbar'};
-}`;
+}
+
+/* Custom CSS */
+${config.customCSS || ''}`;
 };
 
 export const randomizeConfig = (): ScrollbarConfig => {

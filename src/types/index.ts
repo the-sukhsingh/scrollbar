@@ -7,6 +7,7 @@ export interface ScrollbarConfig {
   thumbRadius: number;
   trackRadius: number;
   visibility: 'auto' | 'hidden' | 'visible';
+  customCSS?: string;
 }
 
 export interface ScrollbarPreset {
